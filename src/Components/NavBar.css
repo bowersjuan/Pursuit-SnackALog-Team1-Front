@@ -1,4 +1,5 @@
 .navBar {
+    
     display: grid;
     grid-template-columns: 2fr .5fr .5fr .5fr;
     width: 100vw;
@@ -20,6 +21,7 @@
     margin-bottom: auto;
     font-size: 2rem;
     text-decoration: underline;
+    text-align: left;
 }
 
 .navBar a {

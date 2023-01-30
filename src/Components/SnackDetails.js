@@ -1,19 +1,23 @@
+import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import axios from "axios";
+import healthyHeartLogo from "../Assets/healthy_heart.png";
+import unhealthyHeartLogo from "../Assets/unhealthy_heart.png";
+
 const API = process.env.REACT_APP_API_URL;
 
 const SnackDetails = () => {
-  const [snack, setSnack] = useState({});
   let { id } = useParams();
   const navigate = useNavigate();
+  const [snack, setSnack] = useState({});
+  const { added_sugar, fiber, is_healthy, name, protein, image } = snack;
 
   useEffect(() => {
     axios
       .get(`${API}/snacks/${id}`)
       .then((res) => setSnack(res.data))
       .catch((err) => console.error(err));
-  }, [id, navigate]);
+  }, [id]);
 
   const deleteSnack = () => {
     axios
@@ -30,19 +34,29 @@ const SnackDetails = () => {
 
   return (
     <div className="snackDetails">
-      <h3>{snack.name}</h3>
+      <img
+        id="heartLogo"
+        src={is_healthy ? healthyHeartLogo : unhealthyHeartLogo}
+        alt="heart"
+      />
+      <img src={image} alt={`${name}`}></img>
+      <h3>{name}</h3>
+      <h5>Added Sugar: {added_sugar}</h5>
+      <h5>Added Sugar: {fiber}</h5>
+      <h5>Added Sugar: {is_healthy}</h5>
+      <h5>Added Sugar: {protein}</h5>
 
-      <Link to="/snacks">
-        <button id="btnBack">Back</button>
-      </Link>
-      <Link to={`/snacks/${id}/edit`}>
-        <button id="btnEdit">Edit</button>
-      </Link>
-      <Link>
+      <div className="snackDetailsButtons">
+        <Link to="/snacks">
+          <button id="btnBack">Back</button>
+        </Link>
+        <Link to={`/snacks/${id}/edit`}>
+          <button id="btnEdit">Edit</button>
+        </Link>
         <button id="btnDelete" onClick={deleteSnack}>
           Delete
         </button>
-      </Link>
+      </div>
     </div>
   );
 };
