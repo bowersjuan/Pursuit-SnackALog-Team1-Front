@@ -2,13 +2,12 @@ import { useState } from "react";
 import "./SnackNewForm.css";
 
 const SnackNewForm = () => {
-  const [checked, setChecked] = useState(false);
   const [snack, setSnack] = useState({
     name: "",
     fiber: "",
     protein: "",
-    addedSugar: "",
-    isHealthy: checked,
+    added_sugar: "",
+    is_healthy: "",
     image: "",
   });
 
@@ -24,11 +23,6 @@ const SnackNewForm = () => {
       ...snack,
       [e.target.id]: Number(e.target.value),
     });
-  };
-
-  const handleCheckbox = () => {
-    setChecked(!checked);
-    setSnack({ ...snack, isHealthy: checked });
   };
 
   return (
@@ -62,28 +56,30 @@ const SnackNewForm = () => {
             type="number"
             min={0}
             onChange={handleNumberChange}
-            value={snack.protein}
+            value="on"
           />
         </label>
 
-        <label htmlFor="addedSugar">
+        <label htmlFor="added_sugar">
           Added Sugar:{" "}
           <input
-            id="addedSugar"
+            id="added_sugar"
             type="number"
             min={0}
             onChange={handleNumberChange}
-            value={snack.addedSugar}
+            value={snack.added_sugar}
           />
         </label>
 
-        <label htmlFor="isHealthy">
+        <label htmlFor="is_healthy">
           Is Healthy:{" "}
           <input
-            id="isHealthy"
+            id="is_healthy"
             type="checkbox"
-            onChange={handleCheckbox}
-            value={snack.isHealthy}
+            onChange={(e) =>
+              setSnack({ ...snack, [e.target.id]: !snack[e.target.id] })
+            }
+            checked={snack.is_healthy}
           />
         </label>
 
