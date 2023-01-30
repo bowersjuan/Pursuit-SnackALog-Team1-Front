@@ -6,6 +6,7 @@
     "axios": "^1.2.6",
     "cors": "^2.8.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
+    "ract": "^0.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",

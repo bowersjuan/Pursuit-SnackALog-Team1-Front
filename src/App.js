@@ -7,6 +7,7 @@ import Show from "./Pages/Show";
 import FourOFour from "./Pages/FourOFour";
 import New from "./Pages/New";
 import Edit from "./Pages/Edit";
+import SnackDetails from "./Components/SnackDetails";
 import "./App.css";
 
 function App() {
