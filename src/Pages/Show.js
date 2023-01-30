@@ -1,7 +1,10 @@
+import SnackDetails from "../Components/SnackDetails";
+
 const Show = () => {
   return (
     <div className="Show">
-      <h2 className="header">Snack Details</h2>
+      <h2 className="header">Snack Info</h2>
+      <SnackDetails />
     </div>
   );
 };
