@@ -5,19 +5,19 @@ const API = process.env.REACT_APP_API_URL;
 
 const SnackDetails = () => {
   const [snack, setSnack] = useState({});
-  let { index } = useParams();
+  let { id } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get(`${API}/snacks/${index}`)
+      .get(`${API}/snacks/${id}`)
       .then((res) => setSnack(res.data))
       .catch((err) => console.error(err));
-  }, [index, navigate]);
+  }, [id, navigate]);
 
   const deleteSnack = () => {
     axios
-      .delete(`${API}/snacks/${index}`)
+      .delete(`${API}/snacks/${id}`)
       .then(() => {
         navigate("/snacks");
         window.alert("Item successfully deleted.");
@@ -35,7 +35,7 @@ const SnackDetails = () => {
       <Link to="/snacks">
         <button id="btnBack">Back</button>
       </Link>
-      <Link to={`/snacks/${index}/edit`}>
+      <Link to={`/snacks/${id}/edit`}>
         <button id="btnEdit">Edit</button>
       </Link>
       <Link>

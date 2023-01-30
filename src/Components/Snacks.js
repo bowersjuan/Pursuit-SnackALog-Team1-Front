@@ -19,8 +19,8 @@ const Snacks = () => {
 
   return (
     <div className="Snacks">
-      {snacks.map((snack, index) => {
-        return <Snack key={snack.id} snack={snack} index={index} />;
+      {snacks.map((snack) => {
+        return <Snack key={snack.id} snack={snack} />;
       })}
     </div>
   );
