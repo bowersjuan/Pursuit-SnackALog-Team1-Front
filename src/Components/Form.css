@@ -1,23 +1,24 @@
 .form-container {
-    width: 350px;
+    width: 480px;
     margin: auto;
 
     padding: 40px;
 
     background-image: linear-gradient(to bottom right, rgb(40, 106, 187), rgb(0, 191, 255));
-    box-shadow: 7px 7px 7px 7px GREY;
+    box-shadow: 67px 67px 7px 7px GREY;
     border-radius: 10px;
 }
 
 form {
     display: grid;
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: 0.36fr 1fr;
     gap: 15px;
 }
 
 form label {
     margin: auto;
     margin-right: 0px;
+    color: white;
 }
 
 form input {
