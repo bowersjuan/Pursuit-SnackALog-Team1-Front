@@ -11,7 +11,7 @@ const SnackNewForm = () => {
     fiber: 0,
     protein: 0,
     added_sugar: 0,
-    is_healthy: false,
+    // is_healthy: false,
     image: "",
   });
   const navigate = useNavigate();
@@ -73,7 +73,7 @@ const SnackNewForm = () => {
           onChange={handleNumberChange}
           value={snack.added_sugar}
         />
-        <label htmlFor="is_healthy">Is Healthy: </label>
+        {/* <label htmlFor="is_healthy">Is Healthy: </label>
         <input
           id="is_healthy"
           type="checkbox"
@@ -81,7 +81,7 @@ const SnackNewForm = () => {
             setSnack({ ...snack, [e.target.id]: !snack[e.target.id] })
           }
           checked={snack.is_healthy}
-        />
+        /> */}
         <label htmlFor="image">Image: </label>
         <input
           id="image"
