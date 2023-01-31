@@ -1,3 +1,39 @@
-label {
-    display: block;
+.form-container {
+    width: 350px;
+    margin: auto;
+
+    padding: 40px;
+
+    background-image: linear-gradient(to bottom right, rgb(40, 106, 187), rgb(0, 191, 255));
+    box-shadow: 7px 7px 7px 7px GREY;
+    border-radius: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 15px;
+}
+
+form label {
+    margin: auto;
+    margin-right: 0px;
+}
+
+form input {
+    text-align: center;
+    border-radius: 5px;
+}
+
+#fiber, #protein, #added_sugar {
+    width: 40px;
+    text-align: left;
+}
+
+#is_healthy {
+    height: 20px;
+}
+
+#image, #name {
+    height: 30px;
 }
