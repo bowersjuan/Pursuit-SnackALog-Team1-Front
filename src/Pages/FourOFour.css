@@ -1,0 +1,31 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 75vw;
+}
+
+.modal-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer button {
+    height: 4vh;
+    width: 10vh;
+    font-size: large;
+}
+
+.modal-body {
+    padding: 10px;
+}
