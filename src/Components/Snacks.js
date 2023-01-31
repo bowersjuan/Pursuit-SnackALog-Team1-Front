@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Snack from "./Snack";
+import "./Snacks.css";
 
 const API = process.env.REACT_APP_API_URL;
 
