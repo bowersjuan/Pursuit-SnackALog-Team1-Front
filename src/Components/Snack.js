@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-const Snack = ({ snack, id }) => {
+const Snack = ({ snack }) => {
   return (
     <div className="snack">
-      <Link to={`/snacks/${id}`}>
-        <section id="snackDetails">
+      <Link to={`/snacks/${snack.id}`}>
+        <div id="snackDetails">
           <h3>{snack.name}</h3>
-        </section>
+        </div>
       </Link>
     </div>
   );
