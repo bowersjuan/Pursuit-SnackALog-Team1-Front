@@ -1,11 +1,12 @@
 .form-container {
-    width: 480px;
+    width: 50vw;
     margin: auto;
 
     padding: 40px;
 
     background-image: linear-gradient(to bottom right, rgb(40, 106, 187), rgb(0, 191, 255));
     box-shadow: 67px 67px 7px 7px GREY;
+
     border-radius: 10px;
 }
 
