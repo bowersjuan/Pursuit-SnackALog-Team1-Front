@@ -12,8 +12,8 @@
 
 form {
     display: grid;
-    grid-template-columns: 0.36fr 1fr;
-    gap: 15px;
+    grid-template-columns: 20% 80%;
+    gap: 10px;
 }
 
 form label {
@@ -28,14 +28,10 @@ form input {
 }
 
 #fiber, #protein, #added_sugar {
-    width: 40px;
+    width: 4vw;
     text-align: left;
 }
 
-#is_healthy {
-    height: 20px;
-}
-
 #image, #name {
-    height: 30px;
+    height: 4vw;
 }

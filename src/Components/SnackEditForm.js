@@ -72,7 +72,7 @@ const SnackEditForm = () => {
           onChange={handleNumberChange}
           value={snack.protein}
         />
-        <label htmlFor="added_sugar">Added Sugar: </label>
+        <label htmlFor="added_sugar">Sugar: </label>
         <input
           id="added_sugar"
           type="number"
