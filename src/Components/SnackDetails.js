@@ -42,9 +42,9 @@ const SnackDetails = () => {
       <img src={image} alt={`${name}`}></img>
       <h3>{name}</h3>
       <h5>Added Sugar: {added_sugar}</h5>
-      <h5>Added Sugar: {fiber}</h5>
-      <h5>Added Sugar: {is_healthy}</h5>
-      <h5>Added Sugar: {protein}</h5>
+      <h5>Fiber: {fiber}</h5>
+      <h5>Is Healthy?: {is_healthy}</h5>
+      <h5>Protein: {protein}</h5>
 
       <div className="snackDetailsButtons">
         <Link to="/snacks">

@@ -11,7 +11,7 @@ const NavBar = () => {
       <Link to="/snacks" id="items">
         Snacks
       </Link>
-      <Link to="/snacks/new">New Snack</Link>
+      <Link to="/snacks/new">Add Snack</Link>
     </nav>
   );
 };

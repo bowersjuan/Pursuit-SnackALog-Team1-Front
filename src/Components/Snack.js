@@ -7,7 +7,6 @@ const Snack = ({ snack }) => {
     <div className="snack">
       <Link to={`/snacks/${snack.id}`}>
         <div id="snackDetails">
-          {" "}
           <h3>
             {snack.name}
             <img
