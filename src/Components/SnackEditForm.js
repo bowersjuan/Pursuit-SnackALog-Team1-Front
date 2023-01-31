@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./SnackEditForm.css";
+import "./Form.css";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -48,73 +48,56 @@ const SnackEditForm = () => {
   }, [id]);
 
   return (
-    <div className="new-form-container">
-      <form className="new-form" onSubmit={handleSubmit}>
-        <label htmlFor="name">
-          Name:{" "}
-          <input
-            id="name"
-            type="text"
-            onChange={handleTextChange}
-            value={snack.name}
-          />
-        </label>
-
-        <label htmlFor="fiber">
-          Fiber:{" "}
-          <input
-            id="fiber"
-            type="number"
-            min={0}
-            onChange={handleNumberChange}
-            value={snack.fiber}
-          />
-        </label>
-
-        <label htmlFor="protein">
-          Protein:{" "}
-          <input
-            id="protein"
-            type="number"
-            min={0}
-            onChange={handleNumberChange}
-            value={snack.protein}
-          />
-        </label>
-
-        <label htmlFor="added_sugar">
-          Added Sugar:{" "}
-          <input
-            id="added_sugar"
-            type="number"
-            min={0}
-            onChange={handleNumberChange}
-            value={snack.added_sugar}
-          />
-        </label>
-
-        <label htmlFor="is_healthy">
-          Is Healthy:{" "}
-          <input
-            id="is_healthy"
-            type="checkbox"
-            onChange={(e) =>
-              setSnack({ ...snack, [e.target.id]: !snack[e.target.id] })
-            }
-            checked={snack.is_healthy}
-          />
-        </label>
-
-        <label htmlFor="image">
-          Image:{" "}
-          <input
-            id="image"
-            type="text"
-            onChange={handleTextChange}
-            value={snack.image}
-          />
-        </label>
-
+    <div className="form-container">
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name: </label>
+        <input
+          id="name"
+          type="text"
+          onChange={handleTextChange}
+          value={snack.name}
+        />
+        <label htmlFor="fiber">Fiber: </label>
+        <input
+          id="fiber"
+          type="number"
+          min={0}
+          onChange={handleNumberChange}
+          value={snack.fiber}
+        />
+        <label htmlFor="protein">Protein: </label>
+        <input
+          id="protein"
+          type="number"
+          min={0}
+          onChange={handleNumberChange}
+          value={snack.protein}
+        />
+        <label htmlFor="added_sugar">Added Sugar: </label>
+        <input
+          id="added_sugar"
+          type="number"
+          min={0}
+          onChange={handleNumberChange}
+          value={snack.added_sugar}
+        />
+        <label htmlFor="is_healthy">Is Healthy: </label>
+        <input
+          id="is_healthy"
+          type="checkbox"
+          onChange={(e) =>
+            setSnack({ ...snack, [e.target.id]: !snack[e.target.id] })
+          }
+          checked={snack.is_healthy}
+        />
+        <label htmlFor="image">Image: </label>
+        <input
+          id="image"
+          type="text"
+          onChange={handleTextChange}
+          value={snack.image}
+        />
+        <div></div>
         <input type="submit" />
       </form>
     </div>
