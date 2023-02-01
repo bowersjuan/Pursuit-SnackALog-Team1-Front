@@ -1,16 +1,16 @@
 h3{
    /* font-size:calc(12px + 1.5vw); */
-font-size: calc(10px + 1vw);
+font-size: calc(10px + .5vw);
     margin-top: 4%;
     margin-bottom: 10%;
 }
 
 
 .snack{ 
-    width: 40vw;
-    height: 50vh;
-    min-height: 200px;
-    min-width: 150px;
+    width: 35vw;
+    height: 40vh;
+    min-height: 300px;
+    min-width: 200px;
     margin-top: 5%;
     margin-bottom: 2%;
     margin-left: auto;
@@ -29,8 +29,8 @@ font-size: calc(10px + 1vw);
 }
 
 #thumbnail{
-    height: 55%;
-    width: 55%;
+    height: 70%;
+    width: 70%;
     border-radius: 50%;
 border: ridge rgb(213, 196, 196) 2px;
 }
@@ -41,12 +41,88 @@ h3{
 }
 
 #thumbnail{
-    height: 70%;
-        width: 70%;
+    height: 60%;
+        width: 60%;
 }
 
 .snack{
-        width: 40vw;
-            height: 50vh;
+        width: 35vw;
+            height: 40vh;
+            min-height: 250px;
+                min-width: 200px;
 }
     }
+
+
+@media screen and (max-width: 478px) {
+    h3 {
+        font-size: .7rem;
+    }
+
+    #thumbnail {
+        height: 60%;
+        width: 60%;
+    }
+
+    .snack {
+        width: 30vw;
+        height: 20vh;
+        min-height: 140px;
+        min-width: 100px;
+    }
+}
+
+
+@media screen and (min-width: 820px) {
+    h3 {
+        font-size: .9rem;
+    }
+
+    #thumbnail {
+        height: 60%;
+        width: 60%;
+    }
+
+    .snack {
+        width: 20vw;
+        height: 50vh;
+        min-height: 320px;
+            min-width: 340px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    h3 {
+        font-size: .9rem;
+    }
+
+    #thumbnail {
+        height: 50%;
+        width: 50%;
+    }
+
+    .snack {
+        width: 20vw;
+        height: 50vh;
+        min-height: 100px;
+        min-width: 240px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+
+    #thumbnail {
+        height: 60%;
+        width: 60%;
+    }
+
+    .snack {
+        width: 15vw;
+        height: 30vh;
+        min-height: 80px;
+        min-width: 180px;
+    }
+}
