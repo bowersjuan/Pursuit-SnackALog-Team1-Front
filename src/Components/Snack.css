@@ -97,13 +97,13 @@ h3{
     }
 
     #thumbnail {
-        height: 50%;
-        width: 50%;
+        height: 60%;
+        width: 60%;
     }
 
     .snack {
         width: 20vw;
-        height: 50vh;
+        height: 35vh;
         min-height: 100px;
         min-width: 240px;
     }
