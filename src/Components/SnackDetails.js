@@ -28,6 +28,7 @@ const SnackDetails = () => {
       })
       .catch((err) => {
         console.error(err);
+        navigate("/not-found");
         window.alert("Error, log not deleted.");
       });
   };
