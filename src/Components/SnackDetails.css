@@ -1,0 +1,47 @@
+.snackDetails{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to bottom right, rgb(40, 106, 187), rgb(0, 191, 255));
+    border-radius: 25px;
+    padding: 3%;
+    padding-top: 5%;
+}
+
+h2{
+    margin-bottom: 2%;
+}
+
+.thumbnail{
+border: ridge ;
+}
+
+#btnEdit{
+   margin: 5%;
+}
+
+#heartLogo {
+    width: 5%;
+    height: 5%;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 768px) {
+ 
+.snackDetails {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to bottom right, rgb(40, 106, 187), rgb(0, 191, 255));
+        border-radius: 25px;
+        padding: 3%;
+        padding-top: 5%;
+    }
+
+        .thumbnail {
+            height: 50vh;
+            width: 50vw;
+            border: ridge;
+        }
+}

@@ -3,7 +3,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <nav className="navBar">
-      <h1>Snack App</h1>
+      <h1>Snack Pac</h1>
 
       <Link to="/" id="home">
         Home

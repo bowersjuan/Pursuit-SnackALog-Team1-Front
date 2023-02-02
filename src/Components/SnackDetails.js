@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import healthyHeartLogo from "../Assets/healthy_heart.png";
 import unhealthyHeartLogo from "../Assets/unhealthy_heart.png";
+import "./SnackDetails.css";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -15,8 +16,11 @@ const SnackDetails = () => {
   useEffect(() => {
     axios
       .get(`${API}/snacks/${id}`)
-      .then((res) => setSnack(res.data))
-      .catch((err) => console.error(err));
+      .then((res) => setSnack(res.data[0]))
+      .catch((err) => {
+        console.error(err);
+        navigate("/not-found");
+      });
   }, [id]);
 
   const deleteSnack = () => {
@@ -35,18 +39,19 @@ const SnackDetails = () => {
 
   return (
     <div className="snackDetails">
-      <img
-        id="heartLogo"
-        src={is_healthy ? healthyHeartLogo : unhealthyHeartLogo}
-        alt="heart"
-      />
-      <img src={image} alt={`${name}`}></img>
-      <h3>{name}</h3>
+      <img className="thumbnail" src={image} alt={`${name}`}></img>
+      <h2>
+        {name}{" "}
+        <img
+          id="heartLogo"
+          src={is_healthy ? healthyHeartLogo : unhealthyHeartLogo}
+          alt="heart"
+        />
+      </h2>
       <h5>Added Sugar: {added_sugar}</h5>
       <h5>Fiber: {fiber}</h5>
       <h5>Is Healthy?: {is_healthy}</h5>
       <h5>Protein: {protein}</h5>
-
       <div className="snackDetailsButtons">
         <Link to="/snacks">
           <button id="btnBack">Back</button>
