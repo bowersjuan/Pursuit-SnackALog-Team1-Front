@@ -81,7 +81,7 @@ const SnackNewForm = () => {
           value={snack.image}
         />
         <div></div>
-        <input type="submit" />
+        <input id="submit-button" type="submit" />
       </form>
     </div>
   );

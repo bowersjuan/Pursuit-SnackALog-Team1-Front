@@ -42,7 +42,7 @@ const SnackEditForm = () => {
   useEffect(() => {
     axios
       .get(`${API}/snacks/${id}`)
-      .then((response) => setSnack(response.data))
+      .then((response) => setSnack(response.data[0]))
       .catch((e) => console.error(e));
   }, [id]);
 

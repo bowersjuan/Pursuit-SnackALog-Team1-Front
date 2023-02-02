@@ -25,6 +25,13 @@ form label {
 form input {
     text-align: center;
     border-radius: 5px;
+
+    color: black;
+}
+
+#submit-button {
+    background-color: rgb(53, 125, 192);
+    color: white;
 }
 
 #fiber, #protein, #added_sugar {
