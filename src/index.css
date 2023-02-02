@@ -1,6 +1,8 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: Helvetica;
+    color: white;
 }
 
 img {
@@ -10,21 +12,28 @@ img {
     border-radius: 25px;
 }
 
+button{
+    color: white;
+    border-radius: 25px;
+    background-color: rgb(53, 125, 192);
+}
+
 h5, h3, h2, h1{
     text-align: center;
+    
 }
 
 .snackDetailsButtons{
  text-align: center;
 }
 
-#heartLogo{
-    width: 10%;
-    height: 10%;
-    display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2%;
+.header{
+    width: 25%;
+    background-image: linear-gradient(to bottom right, rgb(40, 106, 187), rgb(0, 191, 255));
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+padding: .9%;
 }
 
 
