@@ -22,6 +22,7 @@ function App() {
             <Route path="/snacks/new" element={<New />} />
             <Route path="/snacks/:id/edit" element={<Edit />} />
             <Route path="/not-found" element={<FourOFour />} />
+            <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>
       </Router>
