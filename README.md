@@ -8,7 +8,7 @@ Links:
 
 [Back GitHub](https://github.com/sreeves07/Pursuit-SnackALog-Team1)
 
-[Back Deploy](https://snack-a-log-backend-kau7.onrender.com)
+[Back Deploy](https://snack-backend.onrender.com)
 
 Devs:
 
