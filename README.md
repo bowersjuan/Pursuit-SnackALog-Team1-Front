@@ -7,7 +7,7 @@
 [Back Deploy](https://snack-a-log-backend-kau7.onrender.com)
 
 Devs
-[Jonathan Gaal](https://github.com/Jonathan-Gaal)
-[Shamar Reeves](https://github.com/sreeves07)
-[Daniel Rodriguez](https://github.com/DanielR2105)
-[Juan Bowers](https://github.com/bowersjuan)
+-[Jonathan Gaal](https://github.com/Jonathan-Gaal)
+-[Shamar Reeves](https://github.com/sreeves07)
+-[Daniel Rodriguez](https://github.com/DanielR2105)
+-[Juan Bowers](https://github.com/bowersjuan)
