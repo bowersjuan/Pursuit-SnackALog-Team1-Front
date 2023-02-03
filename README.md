@@ -1,5 +1,7 @@
 # Pursuit-SnackALog-Team1-Front
 
+Links:
+
 [Front GitHub](https://github.com/bowersjuan/Pursuit-SnackALog-Team1-Front)
 
 [Front Deploy](https://comfy-blini-4dd56c.netlify.app)
@@ -8,7 +10,8 @@
 
 [Back Deploy](https://snack-a-log-backend-kau7.onrender.com)
 
-Devs
+Devs:
+
 [Jonathan Gaal](https://github.com/Jonathan-Gaal)
 
 [Shamar Reeves](https://github.com/sreeves07)
